@@ -4,5 +4,5 @@ logs/
 models/
 vectorstore/
 __pycache__/
-LLM/
+.venv/
 workworking_before_logging.zip
