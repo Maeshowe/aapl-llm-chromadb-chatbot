@@ -1,0 +1,6 @@
+LLM/
+__pycache__/
+vectorstore/
+models/
+logs/
+workworking_before_logging.zip

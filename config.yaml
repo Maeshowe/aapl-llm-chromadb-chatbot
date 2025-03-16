@@ -1,0 +1,52 @@
+llm:
+  active_model: "Q6"
+  verbose: false
+  models:
+    Q4:
+      model_path: "./models/llama-2-7b-chat.Q4_K_M.gguf"
+      temperature: 0.7
+      max_tokens: 1024
+      context_size: 4096
+      n_batch: 128
+      n_threads: 4
+    Q5:
+      model_path: "./models/llama-2-7b-chat.Q5_K_M.gguf"
+      temperature: 0.5
+      max_tokens: 1024
+      context_size: 4096
+      n_batch: 128
+      n_threads: 4
+    Q6:
+      model_path: "./models/llama-2-7b-chat.Q6_K.gguf"
+      temperature: 0.3
+      max_tokens: 1024
+      context_size: 4096
+      n_batch: 128
+      n_threads: 4
+
+paths:
+  docs_dir: "./docs"
+  logs_dir: "./logs"
+  models_dir: "./models"
+  vectorstore_dir: "./vectorstore"
+
+similarity_search:
+  top_k: 5
+
+metadata:
+  show_source_in_response: true
+
+logging:
+  enable: true
+
+embedding:
+  model: "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+
+prompt:
+  use_custom_prompt: true
+  template: |
+    Az alábbi kontextus alapján válaszolj röviden és magyarul a feltett kérdésre. 
+    Ha a válasz nem található a kontextusban, jelezd, hogy nincs elegendő információ.
+    Kontextus: {context}
+    Kérdés: {question}
+    Válasz:

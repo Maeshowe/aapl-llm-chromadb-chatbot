@@ -1,0 +1,14 @@
+langchain
+langchain-community
+langchain-chroma
+llama-cpp-python
+PyYAML
+sentence-transformers
+chromadb
+pypdf
+python-docx
+openpyxl
+tqdm
+pymupdf
+langchain-huggingface
+langchain-chroma
