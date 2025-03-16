@@ -1,7 +1,8 @@
-LLM/
-__pycache__/
-vectorstore/
-models/
-logs/
 docs/
+.DS_Store
+logs/
+models/
+vectorstore/
+__pycache__/
+LLM/
 workworking_before_logging.zip
