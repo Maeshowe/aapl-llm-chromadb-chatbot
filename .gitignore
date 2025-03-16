@@ -3,4 +3,5 @@ __pycache__/
 vectorstore/
 models/
 logs/
+docs/
 workworking_before_logging.zip
