@@ -13,3 +13,5 @@ pymupdf
 langchain-huggingface
 langchain-chroma
 streamlit
+matplotlib
+seaborn

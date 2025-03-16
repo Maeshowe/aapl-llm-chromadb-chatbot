@@ -30,6 +30,9 @@ paths:
   models_dir: "./models"
   vectorstore_dir: "./vectorstore"
 
+chain:
+  type: "retrieval_qa" # Válassz: "retrieval_qa" vagy "conversational"
+  
 similarity_search:
   top_k: 5
 
