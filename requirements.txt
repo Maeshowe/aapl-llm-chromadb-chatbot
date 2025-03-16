@@ -12,3 +12,4 @@ tqdm
 pymupdf
 langchain-huggingface
 langchain-chroma
+streamlit
